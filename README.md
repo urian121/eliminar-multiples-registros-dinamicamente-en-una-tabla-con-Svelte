@@ -6,7 +6,6 @@ Este proyecto es una aplicación sencilla de gestión de registros en una tabla,
 ![](https://raw.githubusercontent.com/urian121/imagenes-proyectos-github/refs/heads/master/eliminar-multiples-registros-dinamicamente-en-una-tabla-con-svelte.gif)
 
 
-
 ## Características
 
 - **Selección masiva**: Los usuarios pueden seleccionar o deseleccionar todos los registros con un solo clic.
@@ -41,8 +40,8 @@ Este proyecto es una aplicación sencilla de gestión de registros en una tabla,
 
 1. Clona el repositorio:
    ```bash
-   git clone <url_del_repositorio>
-   cd <nombre_del_directorio>
+   git clone https://github.com/urian121/eliminar-multiples-registros-dinamicamente-en-una-tabla-con-Svelte
+   cd eliminar-multiples-registros-dinamicamente-en-una-tabla-con-Svelte
    ```
 
 2. Instala las dependencias:
