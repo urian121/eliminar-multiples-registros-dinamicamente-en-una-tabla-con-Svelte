@@ -53,7 +53,7 @@ Este proyecto es una aplicación sencilla de gestión de registros en una tabla,
     ```bash
     npm run dev
     ```
-4. Abre tu navegador y visita `http://localhost:3000` para ver la aplicación en acción.
+4. Abre tu navegador y visita `http://localhost:5173/` para ver la aplicación en acción.
 
 
 
