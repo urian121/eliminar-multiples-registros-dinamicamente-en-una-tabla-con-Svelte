@@ -1,47 +1,70 @@
-# Svelte + Vite
+# Eliminar múltiples registros de forma dinámica con Svelte 🚀
 
-This template should help get you started developing with Svelte in Vite.
+Este proyecto es una aplicación sencilla de gestión de registros en una tabla, implementada con **Svelte**. Permite eliminar registros seleccionados de una lista, seleccionar todos los registros a la vez, y mostrar alertas emergentes para confirmar las operaciones.
 
-## Recommended IDE Setup
+#### Resultado final
+![](https://raw.githubusercontent.com/urian121/imagenes-proyectos-github/refs/heads/master/eliminar-registros-dinamicamente-en-una-tabla-con-Svelte.png)
 
-[VS Code](https://code.visualstudio.com/) + [Svelte](https://marketplace.visualstudio.com/items?itemName=svelte.svelte-vscode).
 
-## Need an official Svelte framework?
 
-Check out [SvelteKit](https://github.com/sveltejs/kit#readme), which is also powered by Vite. Deploy anywhere with its serverless-first approach and adapt to various platforms, with out of the box support for TypeScript, SCSS, and Less, and easily-added support for mdsvex, GraphQL, PostCSS, Tailwind CSS, and more.
+## Características
 
-## Technical considerations
+- **Selección masiva**: Los usuarios pueden seleccionar o deseleccionar todos los registros con un solo clic.
+- **Eliminación de registros**: Los registros seleccionados se pueden eliminar de manera dinámica.
+- **Alertas emergentes**: El sistema muestra alertas para informar al usuario sobre el éxito de la operación.
+- **Visualización en tabla**: Los registros se muestran en una tabla con campos como nombre, teléfono, sexo, profesión, y departamento.
 
-**Why use this over SvelteKit?**
+## Tecnologías Utilizadas
 
-- It brings its own routing solution which might not be preferable for some users.
-- It is first and foremost a framework that just happens to use Vite under the hood, not a Vite app.
+- **Svelte**: Framework para la creación de interfaces de usuario interactivas.
+- **Bootstrap**: Framework CSS para la maquetación y el diseño responsivo.
+- **Bootstrap Icons**: Biblioteca de íconos para enriquecer la interfaz.
+- **Next.js Toast Notify**: Librería para mostrar alertas emergentes.
 
-This template contains as little as possible to get started with Vite + Svelte, while taking into account the developer experience with regards to HMR and intellisense. It demonstrates capabilities on par with the other `create-vite` templates and is a good starting point for beginners dipping their toes into a Vite + Svelte project.
+> [!IMPORTANT]
+> La librería **Nextjs Toast Notify** es opcional, pero su implementación es tan sencilla que sería un desperdicio no aprovecharla. Mejora significativamente la experiencia del usuario en la aplicación 😮.
 
-Should you later need the extended capabilities and extensibility provided by SvelteKit, the template has been structured similarly to SvelteKit so that it is easy to migrate.
 
-**Why `global.d.ts` instead of `compilerOptions.types` inside `jsconfig.json` or `tsconfig.json`?**
+## Funcionamiento
 
-Setting `compilerOptions.types` shuts out all other types not explicitly listed in the configuration. Using triple-slash references keeps the default TypeScript setting of accepting type information from the entire workspace, while also adding `svelte` and `vite/client` type information.
+1. **Carga de Datos**: El proyecto carga datos de un archivo `data.json` que contiene la información de las personas. Este archivo debe estar ubicado en la carpeta pública del proyecto.
+2. **Selección y Eliminación**: El usuario puede seleccionar registros individualmente o seleccionar todos al mismo tiempo. Luego, los registros seleccionados pueden eliminarse de la tabla.
+3. **Alertas**: Tras la eliminación de un registro, se muestra una alerta emergente que notifica al usuario sobre el éxito de la operación.
 
-**Why include `.vscode/extensions.json`?**
+## Instalación
 
-Other templates indirectly recommend extensions via the README, but this file allows VS Code to prompt the user to install the recommended extension upon opening the project.
+### Requisitos
 
-**Why enable `checkJs` in the JS template?**
+- Node.js 16.x o superior
 
-It is likely that most cases of changing variable types in runtime are likely to be accidental, rather than deliberate. This provides advanced typechecking out of the box. Should you like to take advantage of the dynamically-typed nature of JavaScript, it is trivial to change the configuration.
+### Pasos para la Instalación
 
-**Why is HMR not preserving my local component state?**
+1. Clona el repositorio:
+   ```bash
+   git clone <url_del_repositorio>
+   cd <nombre_del_directorio>
+   ```
 
-HMR state preservation comes with a number of gotchas! It has been disabled by default in both `svelte-hmr` and `@sveltejs/vite-plugin-svelte` due to its often surprising behavior. You can read the details [here](https://github.com/sveltejs/svelte-hmr/tree/master/packages/svelte-hmr#preservation-of-local-state).
+2. Instala las dependencias:
+    ```bash
+    npm install
+    ```
 
-If you have state that's important to retain within a component, consider creating an external store which would not be replaced by HMR.
+3. Ejecuta el servidor de desarrollo:
+    ```bash
+    npm run dev
+    ```
+4. Abre tu navegador y visita `http://localhost:3000` para ver la aplicación en acción.
 
-```js
-// store.js
-// An extremely simple external store
-import { writable } from 'svelte/store'
-export default writable(0)
-```
+
+
+# Apóyanos 🙌
+
+✨ **Comparte este proyecto** con otros desarrolladores para que puedan beneficiarse 📢.
+☕ **Invítame un café o una cerveza 🍺**:
+   - [Paypal](https://www.paypal.me/iamdeveloper86) (`iamdeveloper86@gmail.com`).
+👍 **Suscríbete a mi canal de [YouTube](https://www.youtube.com/WebDeveloperUrianViera?sub_confirmation=1)** para más contenido increíble y tutoriales.
+⭐ **Déjanos una estrella en GitHub**:
+   - Dicen que trae buena suerte 🍀.
+
+Gracias por tu apoyo 🤓.
