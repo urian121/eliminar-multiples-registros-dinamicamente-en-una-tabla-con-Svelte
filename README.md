@@ -3,7 +3,7 @@
 Este proyecto es una aplicación sencilla de gestión de registros en una tabla, implementada con **Svelte**. Permite eliminar registros seleccionados de una lista, seleccionar todos los registros a la vez, y mostrar alertas emergentes para confirmar las operaciones.
 
 #### Resultado final
-![](https://raw.githubusercontent.com/urian121/imagenes-proyectos-github/refs/heads/master/eliminar-registros-dinamicamente-en-una-tabla-con-Svelte.png)
+![](https://raw.githubusercontent.com/urian121/imagenes-proyectos-github/refs/heads/master/eliminar-multiples-registros-dinamicamente-en-una-tabla-con-svelte.gif)
 
 
 
