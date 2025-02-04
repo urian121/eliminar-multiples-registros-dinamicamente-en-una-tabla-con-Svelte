@@ -9,7 +9,6 @@
 
   // Importando la librería de alertas emergentes
   import { toast } from "nextjs-toast-notify";
-  import "nextjs-toast-notify/dist/nextjs-toast-notify.css";
 
   // Declando el arreglo de personas para almacenar los datos obtenidos del archivo JSON
   let personas = [];
@@ -30,7 +29,7 @@
     personas = personas.filter((persona) => persona.id !== idPersona);
 
     // Muestra una alerta emergente para indicar que la operación se realizó con éxito
-    mostarAlerta("La persona fue eliminada correctamente.");
+    mostarAlerta("La persona fue eliminada correctamente.", "warning");
   }
 
   /**
@@ -41,7 +40,8 @@
     // que no están seleccionados (selected === false)
     personas = personas.filter((persona) => !persona.selected);
     mostarAlerta(
-      "Los registros seleccionados fueron eliminados correctamente."
+      "Los registros seleccionados fueron eliminados correctamente.",
+      "success"
     );
   }
 
@@ -88,14 +88,14 @@
    * Muestra una alerta emergente con un mensaje específico.
    * @param msj
    */
-  function mostarAlerta(msj) {
+  function mostarAlerta(msj, type) {
     // Muestra una alerta emergente para indicar que la operación se realizó conxito
-    toast.success(msj, {
+    toast[type](msj, {
       duration: 5000,
       progress: true,
-      position: "top-center",
+      position: "top-right",
       transition: "swingInverted",
-      sonido: true,
+      sound: true,
     });
   }
 </script>
