@@ -18,7 +18,8 @@ Este proyecto es una aplicación sencilla de gestión de registros en una tabla,
 - **Svelte**: Framework para la creación de interfaces de usuario interactivas.
 - **Bootstrap**: Framework CSS para la maquetación y el diseño responsivo.
 - **Bootstrap Icons**: Biblioteca de íconos para enriquecer la interfaz.
-- **Next.js Toast Notify**: Librería para mostrar alertas emergentes.
+- **Next.js Toast Notify**: Librería para mostrar alertas emergentes [Ver](https://www.npmjs.com/package/nextjs-toast-notify)
+- **Loading Request**: Librería para mostrar el [Loading](https://www.npmjs.com/package/loading-request)
 
 > [!IMPORTANT]
 > La librería **Nextjs Toast Notify** es opcional, pero su implementación es tan sencilla que sería un desperdicio no aprovecharla. Mejora significativamente la experiencia del usuario en la aplicación 😮.
