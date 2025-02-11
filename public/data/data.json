@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "nombre": "Juan Perez",
+    "nombre": "Abelardo Perez",
     "telefono": "123-456-7890",
     "sexo": "masculino",
     "profesion": "Ingeniero de Software",
@@ -9,7 +9,7 @@
   },
   {
     "id": 2,
-    "nombre": "Maria Gonzalez",
+    "nombre": "Carolina Gonzalez",
     "telefono": "987-654-3210",
     "sexo": "femenino",
     "profesion": "Contadora",
@@ -33,7 +33,7 @@
   },
   {
     "id": 5,
-    "nombre": "Pedro Lopez",
+    "nombre": "Urian Viera",
     "telefono": "321-654-0987",
     "sexo": "masculino",
     "profesion": "Médico",
@@ -41,7 +41,7 @@
   },
   {
     "id": 6,
-    "nombre": "Ana Suarez",
+    "nombre": "Brenda Suarez",
     "telefono": "654-987-0123",
     "sexo": "femenino",
     "profesion": "Ingeniera Civil",
@@ -49,7 +49,7 @@
   },
   {
     "id": 7,
-    "nombre": "Jose Rodriguez",
+    "nombre": "Luis Rodriguez",
     "telefono": "234-567-8901",
     "sexo": "masculino",
     "profesion": "Profesor",
@@ -73,7 +73,7 @@
   },
   {
     "id": 10,
-    "nombre": "Carolina Castro",
+    "nombre": "Estefania Castro",
     "telefono": "432-109-8765",
     "sexo": "femenino",
     "profesion": "Arquitecta",

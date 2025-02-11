@@ -1,10 +1,5 @@
 <script>
-  // exporta la variable 'selectAll' para que pueda ser utilizada en otros componentes o archivos
-  export let selectAll;
-  // exporta la función 'eliminarRegistroSeleccionados' que probablemente se utiliza para eliminar los registros seleccionados
-  export let eliminarRegistroSeleccionados;
-  // exporta la variable 'totalSeleccionados' que guarda el total de registros seleccionados
-  export let totalSeleccionados;
+  import { selectAll, eliminarRegistroSeleccionados, totalSeleccionados } from "../stores/stores.js";
 </script>
 
 <div class="row">
@@ -18,7 +13,7 @@
       type="button"
       class="btn btn-danger"
       on:click={eliminarRegistroSeleccionados}
-      disabled={totalSeleccionados === 0}
+      disabled={$totalSeleccionados === 0}
     >
       <i class="bi bi-trash"></i> Borrar seleccionados
     </button>
@@ -26,7 +21,7 @@
   <div class="col-md-4">
     <button type="button" class="btn btn-warning">
       <i class="bi bi-people-fill"></i> Total seleccionados:
-      <span class="fw-bold">{totalSeleccionados}</span>
+      <span class="fw-bold">{$totalSeleccionados}</span>
     </button>
   </div>
 </div>
