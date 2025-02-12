@@ -1,4 +1,4 @@
-# Eliminar múltiples registros de forma dinámica con Svelte 🚀
+# Cómo Seleccionar Múltiples Elementos en una Tabla con Checkboxes en Svelte 🚀
 
 Este proyecto es una aplicación sencilla de gestión de registros en una tabla, implementada con **Svelte**. Permite eliminar registros seleccionados de una lista, seleccionar todos los registros a la vez, y mostrar alertas emergentes para confirmar las operaciones.
 

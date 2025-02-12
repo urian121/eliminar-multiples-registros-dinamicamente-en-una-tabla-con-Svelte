@@ -32,7 +32,7 @@
 
 <div class="container">
   <h1 class="text-center fw-bold mb-5">
-    Eliminar Registros Dinámicamente en una Tabla con Svelte
+    Cómo Seleccionar Múltiples Elementos en una Tabla con Checkboxes en Svelte
     <hr />
   </h1>
 
