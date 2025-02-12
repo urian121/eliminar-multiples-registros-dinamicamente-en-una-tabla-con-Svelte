@@ -12,16 +12,22 @@ export const personas = writable([]);
 /**
  * Stores para manejar la cantidad de personas seleccionadas 
  */
-export const totalSeleccionados = derived(personas,
-  ($personas) => $personas.filter((p) => p.selected).length
-);
+export const totalSeleccionados = derived(personas, ($personas) => {
+  // Filtra las personas seleccionadas
+  const seleccionados = $personas.filter((p) => p.selected);
 
+  // Retorna la cantidad de personas seleccionadas
+  return seleccionados.length;
+});
 
 /**
  *  Función para eliminar una persona por ID
  */
 export function eliminarRegistroPersona(id) {
+  // Filtra la lista de personas, eliminando la persona con el ID dado
   personas.update((lista) => lista.filter((p) => p.id !== id));
+
+  // Muestra una notificación de advertencia
   mostarToast("Registro eliminado correctamente", "warning");
 }
 
@@ -29,7 +35,10 @@ export function eliminarRegistroPersona(id) {
  *  Función para eliminar todos los registros seleccionados
  */
 export function eliminarRegistroSeleccionados() {
+  // Filtra la lista de personas, eliminando los que están seleccionados
   personas.update((lista) => lista.filter((p) => !p.selected));
+
+  // Muestra una notificación de éxito
   mostarToast("Registros eliminados correctamente", "success");
 }
 
@@ -37,8 +46,12 @@ export function eliminarRegistroSeleccionados() {
  *  Función para seleccionar todos los registros
  */
 export function selectAll() {
+  // Recorre la lista de personas y cambia la propiedad "selected"
   personas.update((lista) => {
+    // Verifica si todos los elementos están seleccionados
     const allSelected = lista.every((p) => p.selected);
+
+    // Si todos están seleccionados, los deselecciona; de lo contrario, los selecciona
     return lista.map((p) => ({ ...p, selected: !allSelected }));
   });
 }
@@ -47,6 +60,8 @@ export function selectAll() {
  *  Fución para alternar la selección de un registro
  */
 export function toggleSelection(id) {
+  // Actualiza la lista de personas, cambiando la propiedad "selected"
+  // de la persona con el ID dado.
   personas.update((lista) =>
     lista.map((p) => (p.id === id ? { ...p, selected: !p.selected } : p))
   );
